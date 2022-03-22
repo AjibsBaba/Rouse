@@ -18,31 +18,14 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             RouseTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-
-//@Composable
-//fun AppBar(
-//    title: (@Composable () -> Unit)?,
-//    modifier: Modifier? = Modifier,
-//    navigationIcon: (@Composable () -> Unit)? = {},
-//    actions: (@Composable @ExtensionFunctionType RowScope.() -> Unit)? = {},
-//    colors: TopAppBarColors? = TopAppBarDefaults.mediumTopAppBarColors(),
-//    scrollBehavior: TopAppBarScrollBehavior? = null
-//) : Unit {
-//}
